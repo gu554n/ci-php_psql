@@ -32,6 +32,9 @@ RUN { \
     echo 'expose_php = Off'; \
   } > /usr/local/etc/php/conf.d/00-base.ini
 
+#### git ####
+RUN apk add git
+
 #### xdebug ####
 RUN set -ex \
     && apk add --no-cache --virtual xdebug-builddeps \
