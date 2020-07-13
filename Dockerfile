@@ -23,6 +23,9 @@ RUN pecl install -o -f redis \
 RUN apk del .redis
 RUN rm -rf /tmp/pear
 
+#### npm ####
+RUN apk add npm
+
 #### docker ####
 RUN apk add docker
 
