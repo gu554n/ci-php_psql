@@ -24,7 +24,7 @@ RUN apk del .redis
 RUN rm -rf /tmp/pear
 
 #### npm ####
-RUN apk add npm
+RUN apk add npm alpine-sdk
 
 #### docker ####
 RUN apk add docker
