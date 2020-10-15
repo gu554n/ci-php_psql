@@ -52,3 +52,6 @@ RUN set -ex \
 #### aws cli ####
 RUN apk add --no-cache py-pip
 RUN pip install awscli
+
+#### jq ####
+RUN apk add jq
